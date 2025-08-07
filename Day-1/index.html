@@ -2,220 +2,258 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <h2>Registration Form</h2>
-      <div class="flex-container">
-        <div class="flex-items">
-          <label for="fullname">Full Name</label>
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
+    <main class="container">
+      <div class="registration-container">
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
 
-        <div class="flex-items">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="xyz@gmail.com"
-            required
-          />
-        </div>
+        <div class="form-container">
+          <form action="#" method="POST">
+            <h2>Registration Form</h2>
 
-        <div class="flex-items">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-        </div>
+            <div class="flex-container">
+              <div class="flex-container">
+                <div class="flex-items">
+                  <label for="fullname"
+                    >Full Name <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
 
-        <div class="flex-items">
-          <label for="phone">Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+91 9876543210"
-          />
-        </div>
+                <div class="flex-items">
+                  <label for="email"
+                    >Email <span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="xyz@gmail.com"
+                    required
+                  />
+                </div>
 
-        <div class="flex-items">
-          <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" name="dob" />
-        </div>
+                <div class="flex-items">
+                  <label for="password"
+                    >Password <span class="required">*</span></label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a strong password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                    title="Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character."
+                    required
+                  />
+                </div>
 
-        <div class="flex-items">
-          <label for="age">Age</label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            min="0"
-            max="50"
-            placeholder="Enter your age"
-          />
-        </div>
+                <div class="flex-items">
+                  <label for="phone"
+                    >Phone Number <span class="required">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 9876543210"
+                    pattern="^\+91\s?[6-9]\d{9}$"
+                    title="Enter a valid phone number"
+                    required
+                  />
+                </div>
 
-        <div class="flex-items">
-          <label>Gender</label>
-          <div class="horizontal-group">
-            <input type="radio" id="male" name="gender" value="male" /><label
-              for="male"
-              >Male</label
-            >
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="female"
-            /><label for="female">Female</label>
-          </div>
-        </div>
+                <div class="flex-items">
+                  <label for="dob"
+                    >Date of Birth <span class="required">*</span></label
+                  >
+                  <input type="date" id="dob" name="dob" required />
+                </div>
 
-        <div class="flex-items">
-          <label>Hobbies</label>
-          <div class="horizontal-group">
-            <input
-              type="checkbox"
-              id="hobby1"
-              name="hobbies"
-              value="Reading"
-            /><label for="hobby1">Reading</label>
-            <input
-              type="checkbox"
-              id="hobby2"
-              name="hobbies"
-              value="Traveling"
-            /><label for="hobby2">Dancing</label>
-            <input
-              type="checkbox"
-              id="hobby3"
-              name="hobbies"
-              value="Music"
-            /><label for="hobby3">Listening Music</label>
-            <input
-              type="checkbox"
-              id="hobby4"
-              name="hobbies"
-              value="Sports"
-            /><label for="hobby4">Playing Sports</label>
-            <input
-              type="checkbox"
-              id="hobby5"
-              name="hobbies"
-              value="Cooking"
-            /><label for="hobby5">Cooking</label>
-            <input
-              type="checkbox"
-              id="hobby6"
-              name="hobbies"
-              value="Gaming"
-            /><label for="hobby6">Gaming</label>
-            <input
-              type="checkbox"
-              id="hobby7"
-              name="hobbies"
-              value="Photography"
-            /><label for="hobby7">Photography</label>
-            <input
-              type="checkbox"
-              id="hobby8"
-              name="hobbies"
-              value="Gardening"
-            /><label for="hobby8">Gardening</label>
-          </div>
-        </div>
+                <div class="flex-items">
+                  <label for="age">Age</label>
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="13"
+                    max="50"
+                    placeholder="Enter your age"
+                  />
+                </div>
+              </div>
 
-        <div class="flex-items">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="">--Select--</option>
-            <option value="india">India</option>
-            <option value="nepal">Nepal</option>
-            <option value="bhutan">Bhutan</option>
-            <option value="sri-lanka">Sri Lanka</option>
-            <option value="canada">Canada</option>
-            <option value="china">China</option>
-          </select>
-        </div>
+              <div class="flex-items">
+                <legend>Gender</legend>
+                <div class="horizontal-group">
+                  <label for="male"
+                    ><input type="radio" id="male" name="gender" value="male" />
+                    Male</label
+                  >
+                  <label for="female"
+                    ><input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                    />
+                    Female</label
+                  >
+                  <label for="other"
+                    ><input
+                      type="radio"
+                      id="other"
+                      name="gender"
+                      value="other"
+                    />
+                    Other</label
+                  >
+                </div>
+              </div>
 
-        <div class="flex-items">
-          <label for="resume">Upload Resume</label>
-          <input type="file" id="resume" name="resume" />
-        </div>
+              <div class="flex-items">
+                <legend>Hobbies</legend>
+                <div class="horizontal-group">
+                  <label for="hobby1"
+                    ><input
+                      type="checkbox"
+                      id="hobby1"
+                      name="hobbies[]"
+                      value="Reading"
+                    />
+                    Reading</label
+                  >
+                  <label for="hobby2"
+                    ><input
+                      type="checkbox"
+                      id="hobby2"
+                      name="hobbies[]"
+                      value="Traveling"
+                    />
+                    Traveling</label
+                  >
+                  <label for="hobby3"
+                    ><input
+                      type="checkbox"
+                      id="hobby3"
+                      name="hobbies[]"
+                      value="Music"
+                    />
+                    Music</label
+                  >
+                </div>
+              </div>
 
-        <div class="flex-items">
-          <label for="website">Website</label>
-          <input
-            type="url"
-            id="website"
-            name="website"
-            placeholder="https://xyz.com"
-          />
-        </div>
+              <div class="flex-items">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="">--Select Country--</option>
+                  <option value="india">India</option>
+                  <option value="nepal">Nepal</option>
+                  <option value="bhutan">Bhutan</option>
+                  <option value="sri-lanka">Sri Lanka</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
 
-        <div class="flex-items">
-          <label for="contactTime">Time to Contact</label>
-          <input type="time" id="contactTime" name="contactTime" />
-        </div>
+              <div class="flex-items">
+                <label for="website">Website/Portfolio</label>
+                <input
+                  type="url"
+                  id="website"
+                  name="website"
+                  placeholder="https://example.com"
+                />
+              </div>
+              <div class="flex-items">
+                <label for="contactTime">Preferred Time to Contact</label>
+                <input type="time" id="contactTime" name="contactTime" />
+              </div>
 
-        <div class="flex-items">
-          <label for="appointment">Appointment DateTime</label>
-          <input type="datetime-local" id="appointment" name="appointment" />
-        </div>
+              <div class="flex-items">
+                <label for="appointment">Set an Appointment</label>
+                <input
+                  type="datetime-local"
+                  id="appointment"
+                  name="appointment"
+                />
+              </div>
 
-        <div class="flex-items">
-          <label for="color">Favorite Color</label>
-          <input type="color" id="color" name="color" />
-        </div>
+              <div class="flex-items">
+                <label for="color">Favorite Color</label>
+                <input
+                  type="color"
+                  id="color"
+                  name="color"
+                  value="#0f3460"
+                  class="form-color"
+                />
+              </div>
 
-        <div class="flex-items">
-          <label for="experience">Experience Level (0-10)</label>
-          <input
-            type="range"
-            id="experience"
-            name="experience"
-            min="0"
-            max="10"
-          />
-        </div>
+              <div class="flex-items">
+                <label for="resume">Upload Resume (.pdf, .doc)</label>
+                <input
+                  type="file"
+                  id="resume"
+                  name="resume"
+                  accept=".pdf,.doc,.docx"
+                />
+              </div>
 
-        <div class="flex-items">
-          <label for="comments">Comments</label>
-          <textarea
-            id="comments"
-            name="comments"
-            rows="3"
-            cols="50"
-            placeholder="Write your message or feedback here..."
-          ></textarea>
-        </div>
+              <div class="flex-items">
+                <label for="experience">Experience Level</label>
+                <input
+                  type="range"
+                  id="experience"
+                  name="experience"
+                  min="0"
+                  max="10"
+                  value="5"
+                  aria-label="Experience Level from 0 to 10 years"
+                />
+              </div>
 
-        <div class="flex-items">
-          <div class="horizontal-group">
-            <input type="checkbox" id="terms" name="terms" required />
-            <label for="terms">I agree to the Terms & Conditions</label>
-          </div>
-        </div>
+              <div class="flex-items" style="flex-basis: 100%">
+                <label for="comments">Comments</label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="4"
+                  placeholder="Write any additional comments here..."
+                  class="form-textarea"
+                ></textarea>
+              </div>
 
-        <div class="flex-items">
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Reset" />
+              <div class="flex-items" style="flex-basis: 100%">
+                <div class="horizontal-group">
+                  <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    I agree to the Terms & Conditions
+                    <span class="required">*</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex-items-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
+    </main>
   </body>
 </html>
