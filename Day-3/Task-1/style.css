@@ -1,0 +1,148 @@
+/* Custom Styles */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e0e7ff; /* A light violet background similar to the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.orders-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.card-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header-custom h2 {
+  font-weight: 700;
+  color: #343a40;
+  margin: 0;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 1rem; /* Spacing between rows */
+}
+
+.table thead th {
+  border: none;
+  color: #6c757d;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  background-color: transparent;
+  border-bottom: 1px solid #dee2e6;
+  opacity: 0; /* Start invisible */
+  transform: translateY(15px);
+  animation: fadeSlideUp 0.5s ease forwards;
+}
+
+.table tbody td {
+  border: none;
+  vertical-align: middle;
+  padding: 0.3rem 0.3rem;
+}
+
+.customer-profile {
+  display: flex;
+  align-items: center;
+}
+
+.customer-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.status-badge {
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.status-delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.table tbody tr:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.table tbody tr:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.table tbody tr:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.table tbody tr:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.table tbody tr:nth-child(5) {
+  animation-delay: 1s;
+}
+.table tbody tr:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.table tbody tr:nth-child(7) {
+  animation-delay: 1.4s;
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

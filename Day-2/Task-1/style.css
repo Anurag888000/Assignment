@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +6,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e0e0e0; 
+  background-color: #e0e0e0;
   color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .table-container {
@@ -23,6 +22,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 1000px;
+  overflow-x: auto;
 }
 
 .table-header {
@@ -49,7 +49,7 @@ body {
 }
 
 .header-icon svg {
-  color: #4caf50; 
+  color: #4caf50;
   stroke-width: 2.5;
 }
 
@@ -134,4 +134,19 @@ td {
 .status.pending {
   background-color: #fff3cd;
   color: #856404;
+}
+@media (max-width: 768px) {
+  .table-container {
+    padding: 1rem;
+  }
+
+  table {
+    min-width: 600px; /* Keep scroll area */
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
 }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer's Orders</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid p-4 d-flex flex-column align-items-center justify-content-center min-vh-80"
+    >
+      <div class="orders-card">
+        <!-- Card Header -->
+        <div class="card-header-custom">
+          <h2>Customer's Orders</h2>
+           <div class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="table-responsive">
+          <table class="table table-borderless align-middle">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Customer</th>
+                <th>Location</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th class="text-end">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table Row 1 -->
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="customer-profile">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+                    <span class="customer-name">Zinzu Chan Lee</span>
+                  </div>
+                </td>
+                <td>Seoul</td>
+                <td>17 Dec, 2022</td>
+                <td>
+                  <span class="status-badge status-delivered">Delivered</span>
+                </td>
+                <td class="text-end amount">$128.90</td>
+              </tr>
+              <!-- Table Row 2 -->
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="customer-profile">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+                    <span class="customer-name">Jeet Saru</span>
+                  </div>
+                </td>
+                <td>Paris</td>
+                <td>27 Aug, 2023</td>
+                <td>
+                  <span class="status-badge status-cancelled">Cancelled</span>
+                </td>
+                <td class="text-end amount">$5350.50</td>
+              </tr>
+              <!-- Table Row 3 -->
+              <tr>
+                <td>3</td>
+                <td>
+                  <div class="customer-profile">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+                    <span class="customer-name">Sonal Gharti</span>
+                  </div>
+                </td>
+                <td>Tokyo</td>
+                <td>14 Mar, 2023</td>
+                <td>
+                  <span class="status-badge status-shipped">Shipped</span>
+                </td>
+                <td class="text-end amount">$210.40</td>
+              </tr>
+              <!-- Table Row 4 -->
+              <tr>
+                <td>4</td>
+                <td>
+                  <div class="customer-profile">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+                    <span class="customer-name">Alson GC</span>
+                  </div>
+                </td>
+                <td>New Delhi</td>
+                <td>25 May, 2023</td>
+                <td>
+                  <span class="status-badge status-delivered">Delivered</span>
+                </td>
+                <td class="text-end amount">$149.70</td>
+              </tr>
+              <!-- Table Row 5 -->
+              <tr>
+                <td>5</td>
+                <td>
+                  <div class="customer-profile">
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+                    <span class="customer-name">Sarita Limbu</span>
+                  </div>
+                </td>
+                <td>Kathmandu</td>
+                <td>23 Apr, 2023</td>
+                <td>
+                  <span class="status-badge status-pending">Pending</span>
+                </td>
+                <td class="text-end amount">$399.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
