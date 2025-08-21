@@ -15,3 +15,18 @@ body {
   background-color: #e0e7ff; /* indigo-100 */
   color: #4f46e5; /* indigo-700 */
 }
+.prose {
+  color: #374151; /* gray-700 */
+}
+.prose h2 {
+  font-size: 1.875rem; /* text-3xl */
+  margin-bottom: 1.5rem;
+}
+.prose p {
+  line-height: 1.75;
+}
+.prose mark {
+  background-color: #fef08a; /* yellow-200 */
+  padding: 0.1em 0.2em;
+  border-radius: 0.25rem;
+}
