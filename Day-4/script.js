@@ -66,3 +66,4 @@ const updateToolbar = () => {
 editor.addEventListener("keyup", updateToolbar);
 editor.addEventListener("mouseup", updateToolbar);
 editor.addEventListener("focus", updateToolbar);
+
